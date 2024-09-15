@@ -1,0 +1,170 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.todo-form, .login-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.todo-form input[type="text"],
+.todo-form input[type="date"],
+.todo-form select,
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.todo-form input[type="submit"],
+.login-form input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.todo-form input[type="submit"]:hover,
+.login-form input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.todo-item {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-item.completed {
+    opacity: 0.6;
+}
+
+.todo-info {
+    flex-grow: 1;
+}
+
+.todo-actions form {
+    display: inline;
+}
+
+.todo-actions input[type="submit"] {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.todo-actions input[type="submit"]:hover {
+    background-color: #c0392b;
+}
+
+.todo-actions input[type="submit"].toggle {
+    background-color: #2ecc71;
+}
+
+.todo-actions input[type="submit"].toggle:hover {
+    background-color: #27ae60;
+}
+
+.filter-options {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.filter-options a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.filter-options a:hover,
+.filter-options a.active {
+    background-color: #2980b9;
+}
+
+.priority-high { border-left: 5px solid #e74c3c; }
+.priority-medium { border-left: 5px solid #f39c12; }
+.priority-low { border-left: 5px solid #2ecc71; }
+
+.due-date {
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.error-message {
+    color: #e74c3c;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.user-info {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.user-info form {
+    display: inline;
+}
+
+.user-info input[type="submit"] {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.user-info input[type="submit"]:hover {
+    background-color: #c0392b;
+}
